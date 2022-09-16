@@ -50,6 +50,7 @@ useEffect(() => {
   });
 
   return() =>{
+    
     if(getNotificationListener.current && responseNotificationListener.current) {
       Notifications.removeNotificationSubscription(getNotificationListener.current);
       Notifications.removeNotificationSubscription(responseNotificationListener.current);
